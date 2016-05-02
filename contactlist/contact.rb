@@ -34,6 +34,7 @@ class Contact
     # @return [Contact, nil] the contact with the specified id. If no contact has the id, returns nil.
     def find(id)
       # TODO: Find the Contact in the 'contacts.csv' file with the matching id.
+      contact = CSV.read('contacts.csv')
     end
     
     # Search for contacts by either name or email.
